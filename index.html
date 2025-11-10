@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dev Patel — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/favicon.png.png" type="image/png" />
+<script defer src="js/script.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">DP</span> Dev Patel</a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" download class="btn btn-sm" id="resume-link">Download Résumé</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="hamburger" class="hamburger" aria-label="Open Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-text">
+      <h1 class="headline">Hi, I'm <span class="accent">Dev Patel</span>.</h1>
+      <p class="lead">A multidisciplinary <strong>designer & developer</strong> crafting user‑centered products with clean code and clear strategy.</p>
+      <div class="actions">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="assets/resume.pdf" class="btn btn-outline" download id="resume-link-hero">Download Résumé</a>
+      </div>
+      <ul class="pill-list">
+        <li>React</li><li>Node</li><li>Strapi</li><li>Firebase</li><li>SQL/NoSQL</li><li>Figma</li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <img src="images/hero-placeholder.jpg" alt="Preview of portfolio projects" />
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="section-title">Featured Work</h2>
+    <div class="cards">
+      <a class="card" href="project-tech-gadgets.html">
+        <img src="images/tech gadgets.png" alt="Tech Gadgets E‑Commerce" />
+        <div class="card-body">
+          <h3>Tech Gadgets E‑Commerce</h3>
+          <p>React + Strapi + Firebase Auth. Responsive storefront with CMS-driven content.</p>
+          <span class="chip">Web App</span>
+        </div>
+      </a>
+ <a class="card" href="project-secure-https-server.html">
+  <img src="images/Secure Server.png" alt="Secure HTTPS Server" />
+  <div class="card-body">
+    <h3>Secure HTTPS Server</h3>
+    <p>Node/Express with TLS, secure headers & Google OAuth 2.0.</p>
+    <span class="chip">Web</span>
+  </div>
+</a>
+
+      <a class="card" href="project-calgary-ux.html">
+        <img src="images/city of calgary.png" alt="City of Calgary UX Redesign" />
+        <div class="card-body">
+          <h3>City of Calgary UX Redesign</h3>
+          <p>Research, IA redesign, wireframes, and design system tokens.</p>
+          <span class="chip">UX/UI</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta container">
+    <h2>Have a project in mind?</h2>
+    <p>Let’s collaborate to transform ideas into delightful, scalable experiences.</p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand-footer"><span class="brand-mark">DP</span> Dev Patel</div>
+      <p class="muted">Designer & Developer — Calgary, AB</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://gmail.com">devpatel49715@gmail.com</a>
+      <a href="https://github.com/DevPatel-art" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dev-patel-9660b930b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container tiny muted">© <span id="year"></span> Dev Patel. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

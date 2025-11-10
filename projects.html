@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Dev Patel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/favicon.png.png" type="image/png" />
+<script defer src="js/script.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">DP</span> Dev Patel</a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" download class="btn btn-sm" id="resume-link">Download Résumé</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="hamburger" class="hamburger" aria-label="Open Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="container section">
+  <h1 class="page-title">Projects</h1>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="ux">UX/UI</button>
+    <button class="filter-btn" data-filter="db">Database</button>
+    <button class="filter-btn" data-filter="dm">Digital Media</button>
+  </div>
+  <div id="project-grid" class="cards">
+    <a class="card" href="project-tech-gadgets.html" data-type="web">
+      <img src="images/tech gadgets.png" alt="Tech Gadgets E‑Commerce" />
+      <div class="card-body">
+        <h3>Tech Gadgets E‑Commerce</h3>
+        <p>React + Strapi + Firebase Auth.</p>
+        <span class="chip">Web</span>
+      </div>
+    </a>
+    <a class="card" href="project-calgary-ux.html" data-type="ux">
+      <img src="images/city of calgary.png" alt="City of Calgary UX Redesign" />
+      <div class="card-body">
+        <h3>City of Calgary UX Redesign</h3>
+        <p>Research, IA, wireframes, tokens.</p>
+        <span class="chip">UX/UI</span>
+      </div>
+    </a>
+   <a class="card" href="project-secure-https-server.html" data-type="web">
+  <img src="images/Secure Server.png" alt="Secure HTTPS Server" />
+  <div class="card-body">
+    <h3>Secure HTTPS Server</h3>
+    <p>HTTPS, HSTS, secure cookies, Google OAuth.</p>
+    <span class="chip">Web</span>
+  </div>
+</a>
+
+    <a class="card" href="project-weather-widget.html" data-type="web">
+      <img src="images/weather widget.png" alt="Weather Widget" />
+      <div class="card-body">
+        <h3>Weather Forecast Widget</h3>
+        <p>API-driven UI, responsive.</p>
+        <span class="chip">Web</span>
+      </div>
+    </a>
+  </div>
+<section class="section digital-media">
+  <h2 class="section-title">Digital Media</h2>
+
+  <div class="media-grid">
+    <article class="media-card">
+      <div class="media-frame">
+        <video controls preload="metadata" poster="images/Reel.png">
+          <source src="media/Reel Activity.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="media-meta">
+        <h3>Reel Activity</h3>
+        <p class="muted tiny">MP4 • 1080p • ~120s</p>
+      </div>
+    </article>
+     <article class="media-card">
+      <div class="media-frame">
+        <video controls preload="metadata" poster="images/Commercial.png">
+          <source src="media/Commercial.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="media-meta">
+        <h3>AliveBean Commercial</h3>
+        <p class="muted tiny">MP4 • 1080p • ~120s</p>
+      </div>
+    </article>
+         <article class="media-card">
+      <div class="media-frame">
+        <video controls preload="metadata" poster="images/Video Assignment.png">
+          <source src="media/MMDA Video Assignment.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="media-meta">
+        <h3>Animals Video</h3>
+        <p class="muted tiny">MP4 • 1080p • ~120s</p>
+      </div>
+    </article>
+    
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand-footer"><span class="brand-mark">DP</span> Dev Patel</div>
+      <p class="muted">Designer & Developer — Calgary, AB</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://gmail.com">devpatel49715@gmail.com</a>
+      <a href="https://github.com/DevPatel-art" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dev-patel-9660b930b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container tiny muted">© <span id="year"></span> Dev Patel. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
