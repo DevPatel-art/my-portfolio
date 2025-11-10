@@ -2,6 +2,8 @@
 * text=auto
 mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
 media/Commercial.mp4 filter=lfs diff=lfs merge=lfs -text
 media/MMDA[[:space:]]Video[[:space:]]Assignment.mp4 filter=lfs diff=lfs merge=lfs -text
 media/Reel[[:space:]]Activity.mp4 filter=lfs diff=lfs merge=lfs -text
