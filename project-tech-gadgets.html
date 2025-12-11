@@ -31,23 +31,81 @@
 </header>
 
 <main class="container section">
-  <article class="case">
-    <h1 class="page-title">Tech Gadgets E‑Commerce</h1>
-    <p class="muted">Role: Front‑End Developer & UI Designer • Tools: React, Strapi, Firebase • Year: 2025</p>
-    <img class="hero-img" src="images/tech gadgets.png" alt="Tech Gadgets storefront" />
-    <h2>Overview</h2>
-    <p>Built a responsive e‑commerce experience using a headless CMS (Strapi) and Firebase Authentication. Implemented reusable components (React) and protected routes.</p>
-    <h2>Outcomes</h2>
-    <ul>
-      <li>Reduced page load time with code splitting and image optimization.</li>
-      <li>Modular UI library for product cards and cart interactions.</li>
-      <li>CMS‑driven content for rapid updates.</li>
-    </ul>
-    <div class="case-cta">
-      <a class="btn" href="https://github.com/DevPatel-art/website-project" target="_blank" rel="noopener">View Code</a>
-      <a class="btn btn-outline" href="projects.html">Back to Projects</a>
-    </div>
-  </article>
+<article class="case">
+  <h1 class="page-title">Tech Gadgets E-Commerce</h1>
+  <p class="muted">Role: Front-End Developer & UI Designer • Tools: React, Strapi (Headless CMS), Firebase Auth • Year: 2025</p>
+
+  <img class="hero-img" src="images/tech gadgets.png" alt="Tech Gadgets storefront" />
+
+  <h2>Problem</h2>
+  <p>
+    The challenge was to build a modern, scalable e-commerce experience for a tech products store. 
+    The platform needed to support dynamic inventory, fast browsing, secure user authentication, and 
+    a modular UI that could be expanded in future versions. Traditional static sites lacked flexibility, 
+    so a headless CMS and reusable React components were chosen to power the experience.
+  </p>
+
+  <h2>Approach & Process</h2>
+  <ol>
+    <li>
+      <strong>Headless CMS Setup (Strapi):</strong>  
+      Structured product collections for phones, laptops, and accessories.  
+      Created fields for pricing, stock, images, specs, and categories to allow real-time updates without code changes.
+    </li>
+
+    <li>
+      <strong>Modular React Component System:</strong>  
+      Built reusable UI components including product cards, category tiles, carousels, and cart interactions.  
+      Ensured consistency in spacing, shadows, and interactive states to create a professional storefront experience.
+    </li>
+
+    <li>
+      <strong>Authentication & Protected Routes:</strong>  
+      Integrated Firebase Authentication for email/password and Google login.  
+      Added protected routes so only logged-in users could access the cart, checkout, and account dashboard.
+    </li>
+
+    <li>
+      <strong>Performance Optimization:</strong>  
+      Used React.lazy() + Suspense for code splitting.  
+      Optimized images and used CMS-served thumbnail sizes for faster loading.
+    </li>
+
+    <li>
+      <strong>UI & Experience Enhancements:</strong>  
+      Designed a clean, tech-inspired interface with bold headings and a dark/light toggle.  
+      Improved product browsing with filters, category pages, and clear CTAs.
+    </li>
+  </ol>
+
+  <h2>Outcome</h2>
+  <p>
+    The final platform delivers a fast, responsive shopping experience powered by a fully headless architecture.
+    The modular components and CMS-driven content make the system easy to scale, while Firebase ensures secure
+    authentication across all user flows.
+  </p>
+
+  <ul>
+    <li> Significant load-time improvement from code splitting and optimized images.</li>
+    <li> A reusable UI component library that reduced development time for new features.</li>
+    <li> Fully CMS-driven content, enabling rapid updates without code deployments.</li>
+    <li> Reliable login/registration flows with Google and email authentication.</li>
+  </ul>
+
+  <h2>Key Learnings</h2>
+  <ul>
+    <li>How headless CMS architecture improves flexibility and scalability.</li>
+    <li>The value of reusable components in large UI systems.</li>
+    <li>Balancing design and performance in a real-world e-commerce interface.</li>
+    <li>Implementing secure authentication and protected routing best practices.</li>
+  </ul>
+
+  <div class="case-cta">
+    <a class="btn" href="https://github.com/DevPatel-art/website-project" target="_blank" rel="noopener">View Code</a>
+    <a class="btn btn-outline" href="projects.html">Back to Projects</a>
+  </div>
+</article>
+
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">

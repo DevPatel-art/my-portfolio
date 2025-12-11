@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Secure HTTPS Server — Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/favicon.png.png" type="image/png" />
+<script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">DP</span> Dev Patel</a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" download class="btn btn-sm" id="resume-link">Download Résumé</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="hamburger" class="hamburger" aria-label="Open Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="container section">
+<article class="case">
+  <h1 class="page-title">TapFeast — Tablet Ordering System</h1>
+  <p class="muted">Role: UX/UI Designer & Front-End Developer • Tools: HTML, CSS, JavaScript • Year: 2025</p>
+
+  <img class="hero-img" src="images/tapfeast.png" alt="TapFeast Tablet Ordering System" />
+
+  <h2>Problem</h2>
+  <p>
+    Traditional restaurant ordering processes rely on human servers, which can lead to delays, miscommunication, 
+    and inconsistent customer experiences. The goal of TapFeast was to create a <strong>tablet-based ordering 
+    system</strong> that allows customers to browse menus, select items, and send orders directly to the kitchen 
+    without needing staff intervention. The challenge was to design a simple, intuitive interface suitable for 
+    fast-paced environments and users of all ages.
+  </p>
+
+  <h2>Research & Insights</h2>
+  <p>
+    To understand the needs of both customers and restaurant staff, I explored the workflows of existing ordering 
+    systems and identified three major pain points:
+  </p>
+  <ul>
+    <li><strong>Confusing navigation:</strong> Many menus mix categories or require multiple taps to find items.</li>
+    <li><strong>Lack of visual hierarchy:</strong> Users struggle to differentiate between categories and items.</li>
+    <li><strong>Slow ordering pipeline:</strong> Systems often lack a direct connection to the kitchen workflow.</li>
+  </ul>
+
+  <h2>Approach & Process</h2>
+  <ol>
+    <li>
+      <strong>Information Architecture:</strong>  
+      Organized the menu into clear categories including Starters, Mains, Desserts, and Drinks.  
+      Created a flow where users first select a category and then see only relevant items.
+    </li>
+
+    <li>
+      <strong>User Interface Design:</strong>  
+      Designed a clean card-based layout with large buttons, high contrast text, and accessible spacing.  
+      Added smooth animations to guide user attention and improve overall experience.
+    </li>
+
+    <li>
+      <strong>Ordering Logic & Cart System:</strong>  
+      Implemented JavaScript logic to allow users to add items to a cart, view selections, adjust quantities, 
+      and submit the final order.
+    </li>
+
+    <li>
+      <strong>Kitchen Communication:</strong>  
+      Developed a mock kitchen endpoint to simulate real-time order transfer once the customer selects checkout.  
+      This mimics how restaurants route digital orders to kitchen display systems.
+    </li>
+
+    <li>
+      <strong>Responsive Design for Tablet Use:</strong>  
+      Optimized the layout specifically for tablet resolution, ensuring consistent touch targets and spacing.
+    </li>
+  </ol>
+
+  <h2>Outcome</h2>
+  <p>
+    TapFeast delivers a fast, intuitive ordering experience that reduces wait times and minimizes staff workload. 
+    Customers can browse the menu visually, add items with a single tap, and send orders directly to the kitchen. 
+    Restaurants benefit from fewer errors, faster order processing, and improved table turnover.
+  </p>
+
+  <ul>
+    <li> Clear menu categories improve browsing time and reduce decision fatigue.</li>
+    <li> Smooth animations and large buttons enhance accessibility and usability.</li>
+    <li> Direct-to-kitchen flow mirrors real-world restaurant order management.</li>
+    <li> Modular code allows easy expansion (e.g., POS integration, payment options).</li>
+  </ul>
+
+  <h2>Key Learnings</h2>
+  <ul>
+    <li>Designing touch-friendly interfaces requires a focus on spacing, button size, and clear hierarchy.</li>
+    <li>How to simulate real ordering systems using front-end logic and mock endpoints.</li>
+    <li>The importance of reducing cognitive load in menu navigation.</li>
+    <li>Creating scalable UI components that can support future features like cart persistence or multi-table routing.</li>
+  </ul>
+
+  <div class="case-cta">
+    <a class="btn" href="https://github.com/Dhillon66/Tap-Feast.git" target="_blank" rel="noopener">View Code</a>
+    <a class="btn btn-outline" href="projects.html">Back to Projects</a>
+  </div>
+</article>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><div class="brand brand-footer"><span class="brand-mark">DP</span> Dev Patel</div>
+      <p class="muted">Designer & Developer — Calgary, AB</p></div>
+    <div class="footer-links">
+       <a href="https://gmail.com">devpatel49715@gmail.com</a>
+      <a href="https://github.com/DevPatel-art" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dev-patel-9660b930b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container tiny muted">© <span id="year"></span> Dev Patel. All rights reserved.</div>
+</footer>
+</body>
+</html>

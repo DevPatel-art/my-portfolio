@@ -30,32 +30,73 @@
 </header>
 
 <main class="container section">
-  <article class="case">
-    <h1 class="page-title">Secure HTTPS Server</h1>
-    <p class="muted">Role: Back-end Developer • Tools: Node.js, Express, Passport Google OAuth, TLS/SSL • Year: 2025</p>
-    <img class="hero-img" src="images/Secure Server.png" alt="Secure HTTPS server with Google OAuth flow" />
-    <h2>Overview</h2>
-    <p>Implemented an HTTPS server with TLS certificates, secure headers, session handling, and OAuth 2.0 (Google) login. Fixed common issues like <code>redirect_uri_mismatch</code> and <code>Missing required parameter: scope</code>, and documented a clean setup workflow.</p>
+ <article class="case">
+  <h1 class="page-title">Secure HTTPS Server</h1>
+  <p class="muted">Role: Back-end Developer • Tools: Node.js, Express, TLS/SSL, Passport Google OAuth • Year: 2025</p>
 
-    <h2>Highlights</h2>
-    <ul>
-      <li>Local HTTPS with valid certs; HSTS and secure cookies.</li>
-      <li>Google OAuth 2.0 with explicit scopes and environment-based redirect URIs.</li>
-      <li>Clear setup docs for .env, certificate paths, and callback routes.</li>
-    </ul>
+  <img class="hero-img" src="images/Secure Server.png" alt="Secure HTTPS server with Google OAuth flow" />
 
-    <h2>Outcomes</h2>
-    <ul>
-      <li>Reliable sign-in flow with account picker prompts.</li>
-      <li>Reduced auth errors via validated redirect URIs.</li>
-      <li>Reusable routing and middleware structure.</li>
-    </ul>
+  <h2>Problem</h2>
+  <p>
+    Modern web applications require secure authentication, encrypted communication, and reliable session
+    handling. For this project, the challenge was to build a <strong>fully secure HTTPS server</strong> using
+    Node.js and Express, implement <strong>Google OAuth 2.0</strong>, and resolve common auth issues such as 
+    incorrect callback handling, redirect mismatches, and improperly configured TLS certificates.
+  </p>
 
-    <div class="case-cta">
-      <a class="btn" href="https://github.com/devpatel-art/secure-https-server" target="_blank" rel="noopener">View Code</a>
-      <a class="btn btn-outline" href="projects.html">Back to Projects</a>
-    </div>
-  </article>
+  <h2>Approach & Process</h2>
+  <ol>
+    <li>
+      <strong>HTTPS Configuration:</strong>  
+      Implemented TLS/SSL using local certificates, configured secure cipher suites, enforced HTTPS-only traffic,
+      and enabled HTTP Strict Transport Security (HSTS) to prevent downgrade attacks.
+    </li>
+
+    <li>
+      <strong>OAuth 2.0 Integration (Google):</strong>  
+      Set up Passport.js with Google Strategy, added explicit scopes for profile and email, and resolved 
+      <code>redirect_uri_mismatch</code> by properly syncing callback URLs across Google Cloud Console, env files, and Express routes.
+    </li>
+
+    <li>
+      <strong>Session & Cookie Security:</strong>  
+      Implemented secure, HttpOnly session cookies, validated tokens, and added middleware for authentication checks.
+    </li>
+
+    <li>
+      <strong>Error Handling & Diagnostics:</strong>  
+      Fixed issues like <code>Missing required parameter: scope</code>, handled expired tokens gracefully, and improved
+      logging for OAuth debugging and certificate-loading errors.
+    </li>
+
+    <li>
+      <strong>Documentation:</strong>  
+      Created a clean developer-friendly setup guide covering certificates, .env configuration, routing structure,
+      and debugging steps for OAuth flows.
+    </li>
+  </ol>
+
+  <h2>Outcome</h2>
+  <p>
+    The final server provides a <strong>fully encrypted authentication workflow</strong> with strong security practices.
+    The Google OAuth login runs smoothly with predictable redirects and a consistent account picker prompt. The routing 
+    and middleware structure is modular and reusable, making the codebase easy to extend for future improvements.
+  </p>
+
+  <h2>Key Learnings</h2>
+  <ul>
+    <li>How TLS/SSL certificates interact with Express and local environments.</li>
+    <li>The importance of precise redirect URIs in OAuth authentication flows.</li>
+    <li>How to configure secure cookies and sessions for production-level security.</li>
+    <li>Better debugging practices for OAuth and authentication middleware.</li>
+  </ul>
+
+  <div class="case-cta">
+    <a class="btn" href="https://github.com/devpatel-art/secure-https-server" target="_blank" rel="noopener">View Code</a>
+    <a class="btn btn-outline" href="projects.html">Back to Projects</a>
+  </div>
+</article>
+
 </main>
 
 <footer class="site-footer">

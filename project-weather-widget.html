@@ -31,23 +31,80 @@
 </header>
 
 <main class="container section">
-  <article class="case">
-    <h1 class="page-title">Weather Forecast Widget</h1>
-    <p class="muted">Role: Front‑End Developer • Tools: JavaScript, API • Year: 2024</p>
-    <img class="hero-img" src="images/weather widget.png" alt="Weather widget UI" />
-    <h2>Overview</h2>
-    <p>Built a responsive weather widget with unit toggle and day switcher. Consumed a REST API to render forecasts.</p>
-    <h2>Highlights</h2>
-    <ul>
-      <li>Modular JavaScript and accessible UI.</li>
-      <li>Graceful loading and error states.</li>
-      <li>Mobile‑first responsive design.</li>
-    </ul>
-    <div class="case-cta">
-      <a class="btn" href="https://github.com/DevPatel-art/weather-forecast" target="_blank" rel="noopener">View Code</a>
-      <a class="btn btn-outline" href="projects.html">Back to Projects</a>
-    </div>
-  </article>
+<article class="case">
+  <h1 class="page-title">Weather Forecast Widget</h1>
+  <p class="muted">Role: Front-End Developer • Tools: JavaScript, OpenWeather API • Year: 2024</p>
+
+  <img class="hero-img" src="images/weather widget.png" alt="Weather widget UI" />
+
+  <h2>Problem</h2>
+  <p>
+    Many weather widgets are cluttered or overly complex, making it difficult for users to quickly view 
+    essential information. The goal of this project was to create a clean, responsive widget that allows 
+    users to switch between daily forecasts, toggle temperature units, and get accurate real-time data from 
+    an external API—all within a simple, intuitive interface.
+  </p>
+
+  <h2>Approach & Process</h2>
+  <ol>
+    <li>
+      <strong>API Integration:</strong>  
+      Connected to the OpenWeather API to fetch current conditions and multi-day forecasts.  
+      Implemented error handling for failed requests, missing data, and network issues.
+    </li>
+
+    <li>
+      <strong>Widget Architecture:</strong>  
+      Built a modular JavaScript structure that separates data fetching, UI rendering, state management, 
+      and temperature conversion logic.
+    </li>
+
+    <li>
+      <strong>Day Switcher Interaction:</strong>  
+      Displayed multiple forecast cards and enabled users to select any day to update the main detailed 
+      view instantly.
+    </li>
+
+    <li>
+      <strong>Unit Toggle (°C ↔ °F):</strong>  
+      Added a temperature-unit switcher that recalculates and rerenders all temperatures without refetching 
+      data, improving performance.
+    </li>
+
+    <li>
+      <strong>Responsive & Accessible UI:</strong>  
+      Designed a mobile-first layout with scalable cards, readable typography, and clear iconography.  
+      Ensured focus states, alt text, and semantic structure for accessibility.
+    </li>
+  </ol>
+
+  <h2>Outcome</h2>
+  <p>
+    The final widget delivers a fast, interactive, and user-friendly weather experience. It provides 
+    essential information at a glance while allowing deeper exploration of day-to-day forecasts.
+  </p>
+
+  <ul>
+    <li> Smooth temperature-unit toggle with instant UI updates.</li>
+    <li> Reliable error states for poor connections or invalid API responses.</li>
+    <li> Highly responsive layout that adapts gracefully across devices.</li>
+    <li> Efficient modular JavaScript that minimizes re-renders and improves clarity.</li>
+  </ul>
+
+  <h2>Key Learnings</h2>
+  <ul>
+    <li>How to structure API-driven components for scalability and clarity.</li>
+    <li>The importance of user-centric interaction design in small widgets.</li>
+    <li>Balancing visual simplicity with meaningful data presentation.</li>
+    <li>Using modular functions to improve maintainability and readability.</li>
+  </ul>
+
+  <div class="case-cta">
+    <a class="btn" href="https://github.com/DevPatel-art/weather-forecast" target="_blank" rel="noopener">View Code</a>
+    <a class="btn btn-outline" href="projects.html">Back to Projects</a>
+  </div>
+</article>
+
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">

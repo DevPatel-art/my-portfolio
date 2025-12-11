@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather Widget — Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/favicon.png.png" type="image/png" />
+<script defer src="js/script.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">DP</span> Dev Patel</a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" download class="btn btn-sm" id="resume-link">Download Résumé</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="hamburger" class="hamburger" aria-label="Open Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="container section">
+<article class="case">
+  <h1 class="page-title">Tea Castle — Brand & Web Experience</h1>
+  <p class="muted">Role: Front-End Developer & Brand Designer • Tools: React, JavaScript, Illustrator • Year: 2025</p>
+
+  <img class="hero-img" src="images/tea castle.png" alt="Tea Castle website and branding" />
+
+  <h2>Problem</h2>
+  <p>
+    Tea Castle, a handcrafted tea-leaves brand based in India, needed a premium digital presence that reflected 
+    the quality of its products. The existing identity lacked consistency, visual hierarchy, and emotional appeal.
+    The challenge was to build a cohesive brand system and a modern, responsive website that communicates trust, 
+    craftsmanship, and elegance.
+  </p>
+
+  <h2>Approach & Process</h2>
+  <ol>
+    <li>
+      <strong>Brand Discovery & Visual Language:</strong>  
+      Developed a full brand identity including logo variations, a premium colour palette, and supporting
+      typography. Focused on a gold-accented aesthetic to convey luxury and heritage.
+    </li>
+
+    <li>
+      <strong>Logo System & Packaging Exploration:</strong>  
+      Created multiple logo variations—primary, simplified, and monogram—to support different use cases
+      across packaging, labels, and digital interfaces.
+    </li>
+
+    <li>
+      <strong>Website Design & Layout:</strong>  
+      Built a React-based website featuring a refined hero section, elegant animations, and smooth transitions.
+      Implemented a clean product grid with consistent image ratios and better spacing to highlight product quality.
+    </li>
+
+    <li>
+      <strong>Client Feedback Integration:</strong>  
+      Iterated on the hero layout, product card hierarchy, and button styling based on feedback to improve clarity,
+      emotional impact, and first-impression value.
+    </li>
+
+    <li>
+      <strong>Responsive Refinements:</strong>  
+      Ensured full mobile → tablet → desktop responsiveness with attention to typography scaling, 
+      flexible grids, and optimized spacing.
+    </li>
+  </ol>
+
+  <h2>Outcome</h2>
+  <p>
+    The final brand and website deliver a premium, cohesive experience that aligns with Tea Castle’s identity.
+    The refined hero section improved visual engagement, while the enhanced product cards and CTA structure
+    strengthened user flow and browsing behavior. The new brand system provides consistency across digital
+    and physical touchpoints, supporting future expansion.
+  </p>
+
+  <h2>Key Learnings</h2>
+  <ul>
+    <li>The importance of pairing brand identity and UI for a unified experience.</li>
+    <li>How refined typography and spacing dramatically affect perceived quality.</li>
+    <li>Effective feedback integration and iteration cycles in real-world client work.</li>
+    <li>Designing scalable brand systems for both digital and packaging contexts.</li>
+  </ul>
+
+  <div class="case-cta">
+    <a class="btn" href="https://github.com/DevPatel-art/tea-castle" target="_blank" rel="noopener">View Code</a>
+    <a class="btn btn-outline" href="projects.html">Back to Projects</a>
+  </div>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand-footer"><span class="brand-mark">DP</span> Dev Patel</div>
+      <p class="muted">Designer & Developer — Calgary, AB</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://gmail.com">devpatel49715@gmail.com</a>
+      <a href="https://github.com/DevPatel-art" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dev-patel-9660b930b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container tiny muted">© <span id="year"></span> Dev Patel. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
