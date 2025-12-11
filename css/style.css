@@ -183,3 +183,18 @@ input:focus, textarea:focus{outline:2px solid color-mix(in srgb, var(--brand) 35
   .media-frame video,
   .media-frame img{ max-height: 320px; }
 }
+
+.muted {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+[data-theme="light"] .muted {
+  color: #555; 
+}
+
+[data-theme="dark"] .muted {
+  color: #cfcfcf; 
+}
